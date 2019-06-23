@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none
+}
+html,body,#root,#root>div{
+    width: 100%;
+    height: 100%;
+}
+#root>div{
+    display: flex;
+    flex-direction: column;
+    header{
+        width: 100%;
+        height: 44px;
+        display: flex;
+        background: #ccc;
+    }
+    header>span:nth-child(1)
+    {
+        flex: 1;
+        text-align: center;
+        line-height: 44px;
+    }
+    header>span:nth-child(2)
+    {
+      width: 300px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px;
+    }
+    section{
+        flex: 1;
+        .top{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            a{
+                flex: 1;
+                text-align: center;
+                line-height: 40px;
+            }
+            a.active{
+                color: red;
+            }
+        }
+        .center{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-x: auto;
+            dl{
+                display: flex;
+                height: 120px;
+                width: 100%;
+                dt{
+                    width: 150px;
+                    height: 100px;
+                    img{
+                            width: 100%;
+                            height: 100%;    
+                    }
+                }
+                dd{
+                    width: 100%;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        width: 100%;
+                       
+                    }
+                    div{
+                            display: flex;
+                    }
+                }
+            }
+        }
+        .middle{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-x: auto;
+            background: pink;
+            div{
+                flex: 1;
+                display: flex;
+                height: 60px;
+                p{
+                    width: 30px;
+                    line-height: 46px;
+
+                }
+                dl{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    dd{
+                        display: flex;
+                        margin: 5px 0;
+                        span{
+                            margin: 0 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .mideles{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-x: auto;
+            div{
+                flex: 1;
+                display: flex;
+                height: 60px;
+                p{
+                    width: 30px;
+                    line-height: 46px;
+
+                }
+                dl{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    dd{
+                        display: flex;
+                        margin: 5px 0;
+                        span{
+                            margin: 0 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: 50px;
+      
+        display: flex;
+        a{
+            flex: 1;
+            line-height: 50px;
+            text-align: center;
+        }
+        a.active{
+            color: #fff;
+            background: orange;
+        }
+    }
+}
